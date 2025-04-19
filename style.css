@@ -2,25 +2,99 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
-body{
-    display: flex;
+body{  
     width: 100%;
     height: 100vh;
 }
+
+header{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    border-bottom: solid 0.5px rgb(235, 237, 243);
+
+    & a{
+        cursor: pointer;
+        font-weight: 900;
+    }
+
+    & a:hover{
+        color: rgb(142, 143, 146);
+    }
+}
+
+.logo{
+    width: 50px;
+    height: 20px;
+}
+
+.caixa-principal{
+    display: flex;
+
+}
+
 .esquerda{
     width: 50%;
+    text-align: start;
+    padding: 130px 0 10px 20px;
+    line-height: 50px;
+
+    & h1{
+        font-size: 40px;
+    }
+
+    & h2{
+        font-size: 30px;
+    }
+
+    & h5{
+        font-size: 18px;
+        color: rgb(142, 143, 146);
+    }
+
+    & p{
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    & button{
+        width: 100px;
+        height: 30px;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        background-color: rgb(231, 30, 30);
+        font-size: 15px;
+        cursor: pointer;
+    }
+     & button:hover{
+        opacity: 0.6;
+     }
 }
 
 .dirieta{
     width: 50%;
 }
 
-img{
-    width: 80%;
-    height: 80%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: end;
+.img-lado{
+    width: 250px;
+    height: 500px;
+    position: absolute;
+    margin: 44px 0 0 300px;
+}
+
+.circulo{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #ee9393,rgb(231, 30, 30) );
+    top: 0;
+    left: 0;
+    clip-Path: circle(490px at right 760px);
+    z-index: -1;
 }
