@@ -72,9 +72,37 @@ header{
         font-size: 15px;
         cursor: pointer;
     }
-     & button:hover{
+    & button:hover{
         opacity: 0.6;
-     }
+    }
+}
+
+.escolha{
+
+    & .troca-cor{
+        width: 30px;
+        border-radius: 30px;
+        cursor: pointer;
+        margin-left: 8px;
+    }
+    & .vermelho{
+        background-color: #b50012;
+    }
+    & .azul{
+        background-color: #81a5c4 ;
+    }
+    & .amarelo{
+        background-color: #f7da47 ;
+    }
+    & .preto{
+        background-color: #272d33 ;
+    }
+    & .roxo{
+        background-color: #c998e9;
+    }
+    & .branco{
+        background-color: #c1c1c1 ;
+    }
 }
 
 .dirieta{
@@ -92,7 +120,7 @@ header{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #ee9393,rgb(231, 30, 30) );
+    background: #b50012;
     top: 0;
     left: 0;
     clip-Path: circle(490px at right 760px);
