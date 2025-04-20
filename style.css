@@ -14,8 +14,8 @@ header{
     width: 100%;
     height: 10%;
     display: flex;
-    justify-content: space-around;
-    padding-top: 20px;
+    gap: 120px;
+    padding: 20px;
     border-bottom: solid 0.5px rgb(235, 237, 243);
 
     & a{
@@ -35,7 +35,6 @@ header{
 
 .caixa-principal{
     display: flex;
-
 }
 
 .esquerda{
@@ -125,4 +124,178 @@ header{
     left: 0;
     clip-Path: circle(490px at right 760px);
     z-index: -1;
+}
+
+@media (max-width: 1600px){
+    header{
+        gap: 100px
+    }
+    .img-lado{
+        margin-left: 200px;
+    }
+    .circulo{
+        clip-Path: circle(690px at right 860px); 
+    }
+}
+
+@media (max-width: 1350px){
+    header{
+        gap: 90px
+    }
+    .img-lado{
+        margin-left: 120px;
+    }
+    .circulo{
+        clip-Path: circle(690px at right 860px); 
+    }
+}
+
+@media (max-width: 1250px){
+    header{
+        gap: 60px
+    }
+}
+
+@media (max-width: 920px){
+    header{
+        gap: 60px
+    }
+    .caixa-principal{
+        flex-direction: column;
+    }
+    .esquerda{
+        margin-top: -90px;
+    }
+    .img-lado{
+        margin: -130px 0 20px 450px;
+        width: 400px
+    }
+    .circulo{
+        clip-Path: circle(590px at right 860px); 
+    }
+}
+
+@media (max-width: 820px){
+    header{
+        gap: 50px
+    }
+    .img-lado{
+        margin: -130px 0 20px 380px;
+        width: 400px
+    }
+}
+
+@media (max-width: 770px){
+    body{
+       width: 100%;
+    }
+    .escolha{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .img-lado{
+        margin: -500px 0 20px 350px;
+        width: 400px
+    }
+    .troca-cor{
+        width: 60px;
+    }
+}
+
+@media (max-width: 540px){
+    header{
+        gap: 20px
+    }
+    .esquerda{
+        line-height: 35px;
+        width: 100%;
+    }
+    .img-lado{
+        margin: -340px 0 20px 250px;
+        width: 200px;
+        height: 380px
+    }
+    .troca-cor{
+        width: 40px;
+    }
+    .escolha{
+        gap: 20px;
+    }
+    .circulo{
+        clip-Path: circle(470px at right 820px); 
+    }
+}
+
+@media (max-width: 440px){
+    header{
+        gap: 40px;
+        display: grid;
+        grid-template-columns: 50px 50px 70px 50px;
+    }
+    .img-lado{
+        margin: -290px 0 20px 180px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .circulo{
+        clip-Path: circle(370px at right 820px); 
+    }
+    .esquerda{
+        line-height: 45px;
+    }
+}
+
+@media (max-width: 415px){
+    .img-lado{
+        margin: -290px 0 20px 180px;
+        height: 350px;
+    }
+    .circulo{
+        clip-Path: circle(340px at right 890px); 
+    }
+}
+
+@media (max-width: 378px){
+    header{
+        height: 16%;
+    }
+    .esquerda{
+        line-height: 40px;
+        margin-top: -110px;
+
+        & h1{
+            font-size: 30px;
+        }
+        & h2{
+            font-size: 20px;
+        }
+        & p{
+            font-size: 14px; 
+        }
+    }
+    .img-lado{
+        margin: -270px 0 20px 160px;
+        height: 250px;
+    }
+    .troca-cor{
+        width: 20px;
+    }
+    .escolha{
+        gap: 10px;
+    }
+    .circulo{
+        clip-Path: circle(310px at right 720px); 
+    }
+}
+
+@media(max-width: 365px){
+    header{
+        gap: 22px;
+    }
+    .img-lado{
+        margin: -270px 0 20px 120px;
+        height: 300px;
+    }
 }
